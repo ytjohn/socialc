@@ -53,14 +53,12 @@ USE_L10N = True
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = os.path.join(SITE_ROOT, 'media/')
-if DEBUG:
-    print MEDIA_ROOT
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-# MEDIA_URL = '/media/'
-MEDIA_URL = '/http://ec2-23-22-28-115.compute-1.amazonaws.com:8000/media/'
+MEDIA_URL = '/media/'
+# MEDIA_URL = '/http://ec2-23-22-28-115.compute-1.amazonaws.com:8000/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -125,6 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'helloworld',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
