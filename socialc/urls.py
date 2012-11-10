@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'socialc.views.home', name='home'),
     # url(r'^socialc/', include('socialc.foo.urls')),
-    url(r'^$', 'helloworld.views.index', name='default'),
+    url(r'^$', 'socialc.helloworld.views.index', name='default'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
