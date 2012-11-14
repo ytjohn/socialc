@@ -4,5 +4,6 @@ from socialc.helloworld.models import Greetings
 
 def index(request):
     g = Greetings.objects.order_by('?')[0]
-    return HttpResponse(g)
+    content = "%s <br /> <a href='/'>click to be greeted again</a>" % g
+    return HttpResponse(content)
 
